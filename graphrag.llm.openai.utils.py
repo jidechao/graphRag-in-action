@@ -88,7 +88,7 @@ def get_completion_llm_args(
 
 #add by jidechao 
 def remove_json_markers(input_string):
-    start_marker = "```json\n"
+    start_marker = "```json"
     end_marker = "```"
     if input_string.startswith(start_marker) and input_string.endswith(end_marker):
         return input_string[len(start_marker):-len(end_marker)].strip()
